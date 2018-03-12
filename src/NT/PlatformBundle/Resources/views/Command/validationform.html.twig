@@ -1,0 +1,42 @@
+{# NT/PlatformBundle/Resources/views/Command/validationform.html.twig #}
+
+{% extends "NTPlatformBundle::layout.html.twig" %}
+
+    
+{% block title %}{{ parent() }} - Billeterie{% endblock %}
+
+
+{% block body %}
+
+<div class="container">
+    
+<div class="jumbotron row" id="qui">
+<h1 class="text-center"></h1>
+
+<h2>Paiement</h2>
+{#<p>Commande n°{{ id }}</p>
+#}
+{#{% for command in commands %}
+        {{ command.id }}
+ {% endfor %}#}
+
+<p>Validez le paiement de votre commande : </p>
+<form action="/Louvre/web/app_dev.php/platform/payment" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_8LnHhffFERptPyj36nLslK9H"
+    data-amount=""
+    data-name="Stripe.com"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto"
+    data-zip-code="true"
+    data-currency="eur">
+  </script>
+  
+</form>
+</div>
+
+</div>
+
+{% endblock %}

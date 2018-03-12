@@ -1,0 +1,53 @@
+# src/NT/PlatformBundle/Resources/config/routing.yml
+
+nt_platform_home:
+    path:      /{page}
+    defaults:
+        _controller: NTPlatformBundle:Home:index
+        page:        1
+    requirements:
+        page: \d*
+        
+nt_platform_tarif:
+    path:      /tarif
+    defaults:
+        _controller: NTPlatformBundle:Tarif:index
+        page:        1
+    requirements:
+        page: \d*
+        
+nt_platform_command:
+    path:      /command
+    defaults:
+        _controller: NTPlatformBundle:Command:index
+        page:        1
+    requirements:
+        page: \d*
+        method: post
+        
+nt_platform_validationform:
+    path:      /validationform
+    defaults:
+        _controller: NTPlatformBundle:Command:validationform
+        page:        1
+    requirements:
+        page: \d*
+        
+nt_platform_payment:
+    path:      /payment
+    defaults:
+        _controller: NTPlatformBundle:Command:payment
+        page:        1
+    requirements:
+        page: \d*
+
+        
+nt_platform_contact:
+    path:      /contact
+    defaults:
+        _controller: NTPlatformBundle:Contact:index
+        page:        1
+    requirements:
+        page: \d*
+        
+

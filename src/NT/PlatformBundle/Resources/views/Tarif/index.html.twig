@@ -1,0 +1,56 @@
+{# NT/PlatformBundle/Resources/views/Tarif/index.html.twig #}
+
+{% extends "NTPlatformBundle::layout.html.twig" %}
+
+    
+{% block title %}{{ parent() }} - Tarifs & horaires{% endblock %}
+
+
+{% block body %}
+
+    <div class="container">
+
+      <div class="jumbotron row" id="accueil">
+        <h1 class="text-center">Horaires</h1>
+        <img class="col-sm-12 col-md-5" src="{{ asset('assets/img/horloge.jpg') }}" alt="Accueil">   
+        <p class="col-sm-12 col-md-7">Le musée du Louvre est ouvert tous les jours sauf le mardi (et fermé les 1er mai, 1er novembre et 25 décembre). 
+        L'achat de billets en ligne est suspendu les dimanches, les jours fériés et lorsque les ventes dépassent le nombre de 1000 dans la journée.
+        
+        </p>
+        <p class='col-sm-12 col-md-7'>Horaires :</p>
+        <ul class='col-sm-12 col-md-7 schedule'>
+         <li>Lundi 09:00-18:00</li>
+         <li>Mardi Fermé</li>
+         <li>Mercredi 09:00-22:00</li>
+         <li>Jeudi 09:00-18:00</li>
+         <li>Vendredi 09:00-22:00</li>
+         <li>Samedi 09:00-18:00</li>
+         <li>Dimanche 09:00-18:00</li>
+        </ul>
+
+
+      </div>
+
+      <div class="jumbotron row" id="qui">
+        <h1 class="text-center">Tarifs</h1>
+
+<p>Un justificatif sera demandé (carte d’étudiant, militaire ou équivalent) lors de l’entrée pour prouver que vous bénéficiez bien du tarif réduit.</p>
+<p>Journée complète :</p>
+<ul>
+  <li>Un tarif « normal » à partir de 12 ans à 16 €</li>
+  <li>Un tarif « enfant » à partir de 4 ans et jusqu’à 12 ans, à 8 € (l’entrée est gratuite pour les enfants de moins de 4 ans)</li>
+  <li>Un tarif « senior » à partir de 60 ans pour 12 €</li>
+  <li>Un tarif « réduit » de 10 € accordé dans certaines conditions (étudiant, employé du musée, d’un service du Ministère de la Culture, militaire…)</li>
+</ul>
+<p>Demi-journée (entrée à partir de 14H) :</p>
+<ul>
+  <li>Un tarif « normal » à partir de 12 ans à 8 €</li>
+  <li>Un tarif « enfant » à partir de 4 ans et jusqu’à 12 ans, à 4 € (l’entrée est gratuite pour les enfants de moins de 4 ans)</li>
+  <li>Un tarif « senior » à partir de 60 ans pour 6 €</li>
+  <li>Un tarif « réduit » de 5 € accordé dans certaines conditions (étudiant, employé du musée, d’un service du Ministère de la Culture, militaire…)</li>
+</ul>
+      </div>
+
+    </div>
+
+{% endblock %}

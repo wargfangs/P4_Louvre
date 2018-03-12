@@ -1,0 +1,32 @@
+{# NT/PlatformBundle/Resources/views/Contact/index.html.twig #}
+
+{% extends "NTPlatformBundle::layout.html.twig" %}
+
+    
+{% block title %}{{ parent() }} - Contact{% endblock %}
+
+
+{% block body %}
+
+<div class="container">
+
+<div class="jumbotron row" id="qui">
+<h1 class="text-center">Contact</h1>
+<img class="col-sm-12 col-md-5" src="{{ asset('assets/img/louvre_entree.jpg') }}" alt="Accueil">     
+
+<h2>Musée du Louvre</h2>
+<p>Adresse : Rue de Rivoli, 75001 Paris</p>
+<p>Tél. : +33 (0)1 40 20 53 17</p>
+<p>Email : info@louvre.fr</p>
+</div>
+<!--  GOOGLEMAP - front only -->
+{#<div id="google-map">
+   <div class="map">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1402848.0516468443!2d3.749087654595428!3d46.62799486114399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1413207826506" width="600" height="450" frameborder="0" style="border:0"></iframe>
+   </div>
+<div class="clear"></div>
+</div>#}
+<img src="{{ asset('assets/img/louvremap.png') }}" alt="Map">     
+</div>
+
+{% endblock %}
