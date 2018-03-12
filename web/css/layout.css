@@ -1,0 +1,83 @@
+<style type="text/css"> 
+
+      /* Styles de base */
+      body {
+        background: url('assets/img/fond.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+      }
+
+      /* Images */
+      img {
+        width: 100%;
+      }
+
+      iframe {
+          width: 100%;
+      }
+      /* Logo */
+      .logo {
+        height: 50px;
+        width: 70px;
+        padding-left: 30px;
+        }
+        
+      /* Bandeau */
+      .jumbotron {
+          background-color: rgba(238,238,255,0.5);
+          margin-bottom: 40px;
+      }
+      
+      /* Schedule */
+      .schedule {
+          padding-left: 60px;
+      }
+      
+      /* Footer */
+      footer.row {
+          margin: 40px 0 40px 0;
+      }
+      
+      .form-horizontal .form-group{
+          margin-left: 0;
+          margin-right: 0;
+      }
+      
+      .btn.btn-danger{
+          margin-bottom: 50px;
+      }
+      
+      #nt_platformbundle_command_Valider{
+          margin-left: 60px;
+          margin-top: 50px;
+      }
+      
+      label{
+          font-size: 30px;
+      }
+      
+      .billet label{
+          font-size: 20px;
+      }
+
+      /* Styles pour les smartphones */
+
+
+      /* Styles pour les tablettes */
+      @media (min-width: 768px) {
+
+      }
+
+      /* Styles pour les écrans moyens et grands */
+      @media (min-width: 992px) {
+          .navbar-inverse a{
+              font-size: 25px;
+          }
+          .navbar-brand{
+              margin-left: 150px;
+          }
+      }
+
+</style>
