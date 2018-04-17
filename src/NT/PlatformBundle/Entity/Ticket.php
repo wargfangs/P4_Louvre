@@ -79,8 +79,12 @@ class Ticket
     * @ORM\JoinColumn(nullable=false)
     */
     private $command;
-
-
+     
+    public function __construct()
+    {
+//        $this->resaDate = new \DateTime('Europe/Paris');
+    }
+    
     /**
      * Get id
      *
@@ -138,6 +142,11 @@ class Ticket
     {
         return $this->lastname;
     }
+    
+    public function getFullName()
+    {
+        return $this->getFirstname().' '.$this->getLastname();
+    }
 
     /**
      * Set country
@@ -187,6 +196,12 @@ class Ticket
         return $this->birthday;
     }
 
+    public function getAge()
+    {   
+        // calcul de l'age
+        return $age;
+    }
+    
     /**
      * Set visitDay
      *
@@ -326,9 +341,5 @@ class Ticket
     {
         return $this->halfDay;
     }
-    
-    public function __construct()
-    {
-//        $this->resaDate = new \DateTime('Europe/Paris');
-    }
+
 }
